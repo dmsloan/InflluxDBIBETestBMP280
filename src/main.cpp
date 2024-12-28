@@ -23,7 +23,7 @@ ESP8266WiFiMulti wifiMulti;
 #define INFLUXDB_BUCKET "ESP32 Test"
 //#define SEALEVELPRESSURE_HPA (1013.25) //this is the default
 double SEALEVELPRESSURE_HPA (1015.8); // as reported at VNY 2023/03/18 11:00
-const String sketchName = "InfluxDBIBETextBMP280";
+const String sketchName = "InfluxDBIBETestBMP280";
 
 // Set timezone string according to https://www.gnu.org/software/libc/manual/html_node/TZ-Variable.html
 // Examples:
