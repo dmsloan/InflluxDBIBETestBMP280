@@ -12,6 +12,8 @@ ESP8266WiFiMulti wifiMulti;
 #define DEVICE "ESP8266"
 #endif
 
+#include <ESPmDNS.h>
+
 #include <InfluxDbClient.h>
 #include <InfluxDbCloud.h>
 
@@ -101,6 +103,9 @@ float getBME(char type)
 }
 
 void setup() {
+
+  IPAddress RetIP;
+
   Serial.begin(115200);
     while (!Serial){};
   Serial.println();
@@ -119,6 +124,12 @@ void setup() {
   Serial.println();
   Serial.print("IP address: ");
   Serial.println(WiFi.localIP());  //IP address assigned to your ESP32 by your DHCP server
+  Serial.print("DNS address: ");
+  Serial.println(WiFi.dnsIP());  //DNS address assigned to your ESP32 by your DHCP server
+  Serial.print("ubuntuderek.ibe-inc Mdns ip address: ");
+  Serial.println(MDNS.queryHost("ubuntuderek.ibe-inc"));
+  Serial.print("ubuntuderek.ibe-inc DNS ip address: ");
+  Serial.println(WiFi.hostByName("ubuntuderek.ibe-inc", RetIP));
   Serial.println();
 
   Wire.begin();
