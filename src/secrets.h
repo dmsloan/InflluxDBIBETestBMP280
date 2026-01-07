@@ -23,7 +23,8 @@
 // WiFi password
 #define WIFI_PASSWORD "ibeinc9121"
 // InfluxDB v2 server url, e.g. https://eu-central-1-1.aws.cloud2.influxdata.com (Use: InfluxDB UI -> Load Data -> Client Libraries)
-#define INFLUXDB_URL "http://192.168.0.130:8086"
+#define INFLUXDB_URL "http://ubuntuderek.ibeinc.net:8086"
+//#define INFLUXDB_URL "http://192.168.0.130:8086"
 //#define INFLUXDB_URL "http://ubuntuderek.ibe-inc.local:8086" //not working
 // InfluxDB v2 server or cloud API token (Use: InfluxDB UI -> Data -> API Tokens -> <select token>)
 #define INFLUXDB_TOKEN "9bd64c8a047b7b9c2622c0e0222bcf90450a1d402c1fde4a104773481da3517e"

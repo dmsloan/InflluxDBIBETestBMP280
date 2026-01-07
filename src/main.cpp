@@ -127,9 +127,9 @@ void setup() {
   Serial.print("DNS address: ");
   Serial.println(WiFi.dnsIP());  //DNS address assigned to your ESP32 by your DHCP server
   Serial.print("ubuntuderek.ibe-inc Mdns ip address: ");
-  Serial.println(MDNS.queryHost("ubuntuderek.ibe-inc"));
+  Serial.println(MDNS.queryHost("ubuntuderek.ibeinc"));
   Serial.print("ubuntuderek.ibe-inc DNS ip address: ");
-  Serial.println(WiFi.hostByName("ubuntuderek.ibe-inc", RetIP));
+  Serial.println(WiFi.hostByName("ubuntuderek.ibeinc", RetIP));
   Serial.println();
 
   Wire.begin();
